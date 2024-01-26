@@ -1,0 +1,179 @@
+/* 
+	COMP 144 Project 01
+	Natalie Perelygin
+	Stylesheet
+*/
+
+/* Colour palette variables */
+:root {
+	--dark-bg: #222222;
+	--light-text: #ffffff;
+	--light-bg: #cccccc;
+	--subtle-bg: #eeeeee;
+	--accent: #cd672d;
+	--dark-accent: #ac4a1d;
+	--bs-navbar-color: #fff;
+}
+
+/* Global and mobile styles */
+html { scroll-behavior: smooth; }
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+section { box-sizing: border-box; }
+
+img { max-width: 100%; }
+
+/* Links styling */
+a {
+	text-decoration: none;
+	color: var(--accent);
+	transition: 0.5s ease;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: var(--accent);
+}
+
+a:hover {
+	color: var(--dark-accent);
+}
+
+/* Header styles */
+section#showcase {
+	background-image: url('../images/hero_image_mobile.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 75% 50%;
+}
+
+/* Make the header titles white */
+#showcase h1, #showcase h2 {
+	color: var(--light-text);
+	text-shadow: 0 0 0.2em black;
+}
+
+/* FontAwesome icon styles for skills section */
+.fa-stack.skill-icons { 
+	font-size: 3em;
+	color: var(--accent);
+}
+
+/* FontAwesome icon styling for social media links */
+.social-media {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+.fa-stack.social-icons {
+	color: var(--accent);
+	margin: 0.25em;
+	transition: 0.5s ease;
+}
+
+
+/* Timeline styles */
+/* Timeline images appear on the left on mobile, while descriptions appear on the right */
+
+/* Container for timeline images */
+.time-pic { 
+	box-sizing: border-box; 
+	font-size: 1em;
+}
+
+/* Timeline image styling */
+.time-pic img { 
+	max-width: 100%; 
+	border-radius: 50%;
+	border-color: var(--light-bg);
+	border-width: 0.25em;
+	border-style: solid;
+	box-sizing: border-box;
+}
+
+/* Creates a line to connect all the timeline events */
+.time-pic::after {
+	content: ' ';
+	color: var(--light-bg);
+	background-color: var(--light-bg);
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	z-index: -1;
+	left: 19%;
+}
+
+/* Styles for the CV profile picture */
+img#profile-pic {
+	border-radius: 50%;
+	border-width: 0.5em;
+	border-color: var(--light-bg);
+	border-style: solid;
+	box-sizing: border-box;
+}
+
+/* Contact section styles */
+section#contact {
+	background-image: url('../images/hero_image_mobile.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 75% 50%;
+}
+
+#contact h2, #contact h3 {
+	color: var(--light-text);
+	text-shadow: 0 0 0.5em black;
+}
+
+/* Bootstrap overrides */
+/* Styles for buttons */
+.btn-primary {
+	background-color: var(--accent);
+	border-color: var(--accent);
+}
+
+.btn-primary:hover {
+	background-color: var(--dark-accent);
+	color: var(--light-bg);
+	border-color: var(--dark-accent);
+}
+/* Force anchor tags with the button classes to have white text */
+a.btn { 
+	color: var(--light-text); 
+}
+
+/* Styles for tablet and desktop */
+@media (min-width: 768px) {
+	/* Desktop images for header and contact form */
+	section#showcase {
+		background-image: url('../images/hero_image.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	
+	section#contact {
+		background-image: url('../images/hero_image.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 65%;
+	}
+	
+	.time-pic { 
+		border-width: 0.5em;
+	}
+	
+	.time-pic::after {
+		left: 50%;
+	}
+	
+}
