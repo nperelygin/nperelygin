@@ -80,18 +80,18 @@
 		<section id="portfolio" class="container-fluid bg-body-tertiary p-4 p-md-5">
 			<h2 class="display-4 text-center pt-5">Portfolio</h2>
 			<h3 class="display-6 text-center pb-5">Design, Illustration, and Coding</h3>
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
-				<div class="col">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 grid">
+				<div class="col grid-item">
 					<div class="card">
-						<a href="images/peregyr_card.jpg" target="_blank"><img class="card-img-top" src="images/peregyr_card.jpg" alt="A stylized logo design featuring a falcon holding a flower"></a>
+						<a href="images/witchhut_s.png" target="_blank"><img class="card-img-top" src="images/Mayors_Daughter_Web.pdf" alt="An illustration of a girl and a witch in front of a bubbling cauldron"></a>
 						<div class="card-body">
-							<h3 class="text-center">Graphic Design</h3>
-							<p>A personal logo I designed for use on my business cards and my website.</p>
+							<h3 class="text-center">Sequential Illustrations</h3>
+							<p>A series of chapter illustrations I created as part of my art course, depicting the first part of a story I am working on.</p>
 						</div>
 					</div>
 				</div>
 				
-				<div class="col">
+				<div class="col grid-item">
 					<div class="card">
 						<a href="https://peregyr.com/" target="_blank"><img class="card-img-top" src="images/website_screencap.jpg" alt="A screenshot of a web page"></a>
 						<div class="card-body">
@@ -101,17 +101,17 @@
 					</div>
 				</div>
 				
-				<div class="col">
+				<div class="col grid-item">
 					<div class="card">
-						<a href="images/wdzfinal.jpg"><img class="card-img-top" src="images/wdzfinal.jpg" alt="Painting of a griffon sitting on a cliff"></a>
+						<a href="images/catlogo.png"><img class="card-img-top" src="Categories_Prototype.pdf" alt="A stylized logo of a cat"></a>
 						<div class="card-body">
-							<h3 class="text-center">Fan Zine Illustration</h3>
-							<p>An illustration I made for the officially sponsored Wintersday Zine for Guild Wars 2.</p>
+							<h3 class="text-center">Categories</h3>
+							<p>Using Adobe XD, I designed a prototype for a mobile app focused on providing information about various cat breeds. I created the logo using Adobe Illustrator.</p>
 						</div>
 					</div>
 				</div>
 				
-				<div class="col">
+				<div class="col grid-item">
 					<div class="card">
 						<a href="https://peregyr.com/velyre" target="_blank"><img class="card-img-top" src="images/comic_thumbnail.jpg" alt="Drawing of a yellow flower"></a>
 						<div class="card-body">
@@ -121,7 +121,7 @@
 					</div>
 				</div>
 				
-				<div class="col">
+				<div class="col grid-item">
 					<div class="card">
 						<img class="card-img-top" src="images/writing_screenshot.jpg" alt="Screenshot of a PDF article">
 						<div class="card-body">
@@ -131,7 +131,7 @@
 					</div>
 				</div>
 				
-				<div class="col">
+				<div class="col grid-item">
 					<div class="card">
 						<img class="card-img-top" src="images/mountains.jpg" alt="Photograph of a snowy mountain peak">
 						<!-- Photo by Joshua Kettle on Unsplash https://unsplash.com/@joshuakettle -->
@@ -376,6 +376,21 @@
 			</ul>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="scripts/masonry.pkgd.min.js"></script>
+		<script>
+			var elem = document.querySelector('.grid');
+			var msnry = new Masonry( elem, {
+				// options
+				itemSelector: '.grid-item',
+				columnWidth: 200
+			});
+
+			// element argument can be a selector string
+			//   for an individual element
+			var msnry = new Masonry( '.grid', {
+			// options
+			});
+		</script>
 	</body>
 </html>
 <!-- Webpage created by Natalie Perelygin -->
