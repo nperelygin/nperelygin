@@ -15,12 +15,12 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-I'm Natalie! I'm a recent college graduate interested in web and game development. I am also a 2D and 3D artist.
+I'm Natalie! I'm a recent college graduate interested in web and game development. As part of my coursework, I became proficient in using HTML, CSS, and JavaScript, along with React.
 
 https://nperelygin.github.io/nperelygin/
 
 - 🔭 I’m currently working on various web, graphic design, and 3D modelling projects.
-- 🌱 I’m currently learning Python on my own.
+- 🌱 I’m currently learning Python and PHP on my own.
 - 📫 How to reach me: You can email me at nataliemprl@gmail.com.
 - 😄 Pronouns: she/her
-- ⚡ Fun fact: I also like to make illustrations in my free time!
+- ⚡ Fun fact: I am also a 2D and 3D artist!
